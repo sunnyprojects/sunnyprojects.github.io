@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <title>Sunny | front-end designer and developer</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="hero">
+      <img class="hero-logo" src="images/logo.svg">
+      <div class="contact">
+        <div class="contact-socialicons">
+          <a href="#" target="_blank" class="contact-socialicon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31 32">
+              <image data-name="0 Instagram" width="31" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAQAAABAi2vKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfiBwIRDAw3ls7SAAAB30lEQVQ4y63VO0tcURQF4M8xNmrSiIT4ml7ig8GkSZAgaJNASJc6jY3/wTQpBP+A/8HCYNKLpFNEEGxstAoq4pMRMcNOMXf0zHUSxph1qrv2WufCPvvR4havvVNS1O2xR/L45dyhPRu++ZEPjlgTTZ81I6l5SrkufO3kzrmuU5RN1cyDzoVwas6Efp0ao9OASfPOhHBusEqvCmFLr+bQb0sIq1ASwom+Joxdpk2gx7EQSswK4UsT5kL214/4LITZgjHwtYG8VVFJUWv2/dRz8AbfwZjsxo6ctWjBUZblIwuKaLEhhA9oz/LlQLjKmadd5l760jSe+ORVprkSDigL+3XmmRvTjhU7N18zdap9oUwIuwk9nBXIiqGMGbKSFdNwotsVomrfTuglISxrS7g2y0JYSrjtW/tm8rIV4UJ3LhvdLoSKrhtmU4hCTjaugEWHOf7QIgrG86VQj2fZzXexmcT/aL8n8vafYLSBcjSJJ3hQ6v7Lw+0m9D3L5oFFe5+WSZG1TLVh23PBRg2boqPWsNWkvGjwVPlxkeJlNcEF6+BtA0nFng17Kg1i78F6bVQe69E8+pzURuXtoO5v0tybDurbNXFm3qSBv6yJfhPmnNaviQcuKf55RbYkV/zDgv4N/ftnk1rNwoMAAAAASUVORK5CYII="></image>
+            </svg>
+          </a>
+          <a href="#" target="_blank" class="contact-socialicon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 31">
+              <image data-name="0 facebook" width="16" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAfCAQAAABErIU/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfiBwIRDCQCI2YoAAAAlUlEQVQoz2NgQAUsDPEMOxjeMfxn+M/wmeElwwNUaWmGUwz/0SAS4Ga4gSGNoqACizSKgsfYFLDApVUYZODsfwytDDsZnqHqt0fStxAhzARnCSIpPo9NAQ5AuQJGhg1QliSDGVz0CsNdKOsOI6pXMMBmQlY8oFwBC8NDKJOLQRQu/J7hE8yRCLUBSEFdQNeQHFVALQUAUX5LZtD1BYwAAAAASUVORK5CYII="></image>
+            </svg>
+          </a>
+          <a href="#" target="_blank" class="contact-socialicon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34 28">
+              <image data-name="0 twitter" width="34" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAQAAACuPqWUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfiBwIRDQAnO7O4AAABo0lEQVQ4y53VSyhEURjA8f+gkMcglMdCqUkeCSkWFjMiUiwtKYqsxkbCgqTERlYsLMgKSbLwKCEbxWyUZiELyRTCKEOamWNxh3Fn7j3une9sbud853e/c+9XB4xGBzs8I3jniG7if+cbSAaw4PwHyGIfoRpn5GGlk0N2lZQ6BCMSIpnzCEIg8BJA4KNMSRpGIJjAooNMaRDK8NFOJQMAi6GpNdI163jVRW7w4KMWYO538paWKMShSwgEX7QpaU7V9BZVKqRHQjzg+Ekrwh+xeEwvuaHVfgky9/dtC5opl6wwqrMWhaSShkt6cr0xpgAJwBIpbGMjxXD3/oQn/DgeUxUCQX0YqY6R8KtrP4gJOVGfrZjHGJChyE9UitskESA/EokjkT6uTCCb0T8rmxe8piqpQiNmTBHL2o2TxJlh4okcvf6zsm6ICNIqb+QmVrkmYO7XRkca81Ji+j/AyhAeaW8Mam2zUMIn8RRQQRPNyh2iE3d0cai9VMOpgY/5wSxW+THsbPClC9wzSaFse/iuyaARO+XYyCQJwRv3uHGxxwVBeQ3femwWGO+n8CYAAAAASUVORK5CYII="></image>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          Sunny is
+          <span id="animatedTitle"></span>
+        </h1>
+        <a href="#portfolio" class="hero-morelink">Explore her work</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="portfolio" id="portfolio">
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/vSearch/01.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/vSearch/02.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/vSearch/03.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/vSearch/04.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">vSearch and vContacts</h2>
+            <div class="project-details">
+              <p class="project-description">The All-In-One searching and collaborating vSearch is now extending its
+                features to keep up with the modern standard and to take out even the slightest inconvenience for
+                internal users.
+                The site allows users to search
+                client, people, document, app and entities. The site is fully responsive built with Bootstrap 4.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://gtsportal/prototypes/firmwide-janus/vSearch/index.html">Visit
+                site (Prototype)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Janus/01.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Janus/02.gif">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Janus/03.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Janus/04.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">The New Janus</h2>
+            <div class="project-details">
+              <p class="project-description">The New Janus redesign for Janus, an internal project to
+                serve PwC people better. All PwC news and information will be centralised in Janus, including leaders'
+                messages, LoS news, users's app notifications and system status. The site allows users to read, write
+                and comment posts. The site is fully responsive built with Bootstrap 4.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://gtsportal/prototypes/firmwide-janus/html/index.html">Visit
+                site (Prototype)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PwC-Smart-Office/01.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PwC-Smart-Office/02.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PwC-Smart-Office/03.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PwC-Smart-Office/04.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">PwC Smart Office</h2>
+            <div class="project-details">
+              <p class="project-description">A minimal business website redesign for Smart Office with PwC style. The
+                site allows users to sign in to Smart Booking system, and let external
+                users know PwC Smart Office better. Every pages are designed to
+                look great on all devices, and great
+                for business presentations.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="https://smartoffice.pwchk.com">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Smart-Office/01.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Smart-Office/02.gif">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Smart-Office/03.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/Smart-Office/04.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">Smart Office</h2>
+            <div class="project-details">
+              <p class="project-description">Smart Office, a solution powered by FaceTech and IoT to maximise office
+                resources and imbue office modernisation with FaceTech access
+                control. The site is fully responsive built with <a target="_blank" href="https://semantic-ui.com/">Semantic
+                  UI</a>.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://gtsportal/prototypes/SmartOffice-Website-2/html/en/index.html">Visit
+                site (Prototype)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+
+
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PCCW/MartPower/1.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PCCW/MartPower/2.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PCCW/MartPower/3.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/PCCW/MartPower/4.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">MartPower</h2>
+            <div class="project-details">
+              <p class="project-description">Smart Office, a solution powered by FaceTech and IoT to maximise office
+                resources and imbue office modernisation with FaceTech access
+                control. The site is fully responsive built with <a target="_blank" href="https://semantic-ui.com/">Semantic
+                  UI</a>.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://gtsportal/prototypes/SmartOffice-Website-2/html/en/index.html">Visit
+                site (Prototype)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/bareesthetics.com.hk/1.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/bareesthetics.com.hk/2.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/bareesthetics.com.hk/3.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/bareesthetics.com.hk/4.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">Bare Esthetics Website</h2>
+            <div class="project-details">
+              <p class="project-description">A beautifully minimal and responsive website designed for Global
+                eSolutions, a global leading provider dedicated
+                in financial technologies for more than 10 years. The site is fully responsive built with <a target="_blank"
+                  href="https://getbootstrap.com/docs/3.3/">Bootstrap 3</a></p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://www.ges.com.hk/en-us/index.html">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/GES-EX/1.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/GES-EX/2.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/GES-EX/3.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/GES-EX/4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">GES EX</h2>
+            <div class="project-details">
+              <p class="project-description">A beautifully minimal and responsive website designed for Global
+                eSolutions, a global leading provider dedicated
+                in financial technologies for more than 10 years. The site is fully responsive built with <a target="_blank"
+                  href="https://getbootstrap.com/docs/3.3/">Bootstrap 3</a></p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://www.ges.com.hk/en-us/index.html">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-web/01.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-web/02.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-web/03.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-web/04.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">GES Website</h2>
+            <div class="project-details">
+              <p class="project-description">A beautifully minimal and responsive website designed for Global
+                eSolutions, a global leading provider dedicated
+                in financial technologies for more than 10 years. The site is fully responsive built with <a target="_blank"
+                  href="https://getbootstrap.com/docs/3.3/">Bootstrap 3</a></p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="http://www.ges.com.hk/en-us/index.html">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-booth/1.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-booth/2.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-booth/3.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-booth/4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">Trade Show Booth</h2>
+            <div class="project-details">
+              <p class="project-description">iFX EXPO is the first and largest financial business to business expo in
+                the world. This trade show booth was
+                designed for Global eSolutions to attend iFX EXPO
+                Asia
+                2016.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="https://www.cccapital.co.uk/account-opening/">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-brochure/1.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-brochure/2.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-brochure/3.jpg">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-brochure/4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">GES Brochure</h2>
+            <div class="project-details">
+              <p class="project-description">A strong and persuasive company profile with attractive, professional
+                appearance is what the company need to
+                sell their products and services. This brochure was designed for Global eSolutions to attend iFX EXPO
+                Asia
+                2016.</p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="#">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="carousel-scroll-container">
+            <div class="carousel-scroll-container-inner">
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-ccc/1.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-ccc/2.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-ccc/3.png">
+              </div>
+              <div class="carousel-slide">
+                <img class="b-lazy" src="images/placeholder-image.svg" data-src="images/portfolio/ges-ccc/4.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-inner">
+          <div class="project-information">
+            <h2 class="project-title">CCC Account Opening</h2>
+            <div class="project-details">
+              <p class="project-description">Online application for City Credit Capital Account Opening.</a></p>
+            </div>
+            <div class="project-more">
+              <a target="_blank" class="project-link" href="https://www.cccapital.co.uk/account-opening/">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      Work for money, love and beer!
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="plugins/jquery-3.3.1.min.js"></script>
+  <script src="plugins/typewriter.js"></script>
+
+  <script src="plugins/TweenLite.min.js"></script>
+  <script src="plugins/Draggable.min.js"></script>
+  <script src="plugins/CSSPlugin.min.js"></script>
+
+  <script src="plugins/blazy.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
